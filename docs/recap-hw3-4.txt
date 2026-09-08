@@ -1,0 +1,73 @@
+
+Recap Document – CS313 Project 3–4
+
+
+Student.java
+
+Purpose
+This class establishes a Student with an ID, last name, and first name.
+It also implements Comparable so that students can be sorted by name.
+
+Methods
+
+1. compareTo(Student other)
+Pre-condition: other is a Student object.
+Post-condition: Outputs an integer based on alphabet order (surname then forename).
+Runtime: O(1)
+
+2. equals(Object obj)
+Pre-condition: obj is not null, obj is a Student.
+Post-condition: Returns true if both student IDs are equal.
+Runtime: O(1)
+
+3. toString()
+No pre-conditioning
+Post-condition: Provides a formatted string for printing a given student's full name and ID.
+Runtime: O(1)
+
+
+SortedLinkedList.java
+Purpose
+This class implements a custom linked list with a dummy head node.
+Students are kept in alphabetical order as they are inserted.
+
+Methods:
+
+1. insert(Student s)
+Pre-condition: s is not null and contains valid information for a student.
+Post-condition: The student is on the list in its alphabetically correct position.
+Runtime: O(n)
+
+2. delete(Student s)
+Pre-condition: s is not null.
+Post-condition: If there is a student who has an identical ID, then delete him from the list.
+Runtime: O(n)
+
+3. search(Student s)
+Pre-condition: s is not null.
+Post-condition: The required student from the list, if it exists, or null.
+Runtime: O(n)
+
+4. toString()
+No preconditions.
+Post-condition: Prints all students in a list as a string, sorted alphabetically by name.
+Runtime: O(n)
+
+5. isEmpty()
+No pre-conditions.
+Post-condition: True if the list has no students, False otherwise.
+Runtime: O(1)
+
+
+
+Employee.java
+
+Purpose
+
+The user can add students, search students by ID, list students, or quit.
+Actions & Method Calls: 
+-add → adds a new Student and calls insert() on the list. 
+- search → asks for an ID and calls search() on the list. 
+- display → calls toString() to print the list of students in sorted order. 
+- quit → Terminates the program. 
+
