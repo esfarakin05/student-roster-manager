@@ -1,6 +1,6 @@
 # Employee Roster — Sorted Linked List (Java)
 
-A command-line employee record manager built for **CSCI 313 (Data Structures), Queens College — Summer Project, Homework 1–4**.
+A command-line employee record manager built for **CSCI 313 (Data Structures), Queens College**.
 
 The program stores employee records in a **custom sorted linked list built from scratch** (no Java `LinkedList` ADT), keeping the list alphabetically ordered by last name as records are inserted.
 
